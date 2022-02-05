@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		11094F5027AF23A9007F0B65 /* win.wav in Resources */ = {isa = PBXBuildFile; fileRef = 11094F4E27AF23A8007F0B65 /* win.wav */; };
+		11094F5127AF23A9007F0B65 /* lose.wav in Resources */ = {isa = PBXBuildFile; fileRef = 11094F4F27AF23A9007F0B65 /* lose.wav */; };
 		114E4A2E27AE80C600F26274 /* GwentApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 114E4A2D27AE80C600F26274 /* GwentApp.swift */; };
 		114E4A3027AE80C600F26274 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 114E4A2F27AE80C600F26274 /* ContentView.swift */; };
 		114E4A3227AE80C800F26274 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 114E4A3127AE80C800F26274 /* Assets.xcassets */; };
@@ -20,11 +22,11 @@
 		114E4A4D27AEA40700F26274 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 114E4A4C27AEA40700F26274 /* CardView.swift */; };
 		114E4A4F27AECDA400F26274 /* StyledButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 114E4A4E27AECDA300F26274 /* StyledButton.swift */; };
 		114E4A5127AED13900F26274 /* FinalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 114E4A5027AED13900F26274 /* FinalView.swift */; };
-		11DCCBCD27AF10C000AC0316 /* win.wav in Resources */ = {isa = PBXBuildFile; fileRef = 11DCCBCB27AF10C000AC0316 /* win.wav */; };
-		11DCCBCE27AF10C000AC0316 /* lose.wav in Resources */ = {isa = PBXBuildFile; fileRef = 11DCCBCC27AF10C000AC0316 /* lose.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		11094F4E27AF23A8007F0B65 /* win.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = win.wav; sourceTree = "<group>"; };
+		11094F4F27AF23A9007F0B65 /* lose.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = lose.wav; sourceTree = "<group>"; };
 		114E4A2A27AE80C600F26274 /* Gwent.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Gwent.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		114E4A2D27AE80C600F26274 /* GwentApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GwentApp.swift; sourceTree = "<group>"; };
 		114E4A2F27AE80C600F26274 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -39,8 +41,6 @@
 		114E4A4C27AEA40700F26274 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		114E4A4E27AECDA300F26274 /* StyledButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StyledButton.swift; sourceTree = "<group>"; };
 		114E4A5027AED13900F26274 /* FinalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinalView.swift; sourceTree = "<group>"; };
-		11DCCBCB27AF10C000AC0316 /* win.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = win.wav; sourceTree = "<group>"; };
-		11DCCBCC27AF10C000AC0316 /* lose.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = lose.wav; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +54,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		11094F4D27AF239A007F0B65 /* SoundEffects */ = {
+			isa = PBXGroup;
+			children = (
+				11094F4E27AF23A8007F0B65 /* win.wav */,
+				11094F4F27AF23A9007F0B65 /* lose.wav */,
+			);
+			path = SoundEffects;
+			sourceTree = "<group>";
+		};
 		114E4A2127AE80C600F26274 = {
 			isa = PBXGroup;
 			children = (
@@ -76,7 +85,7 @@
 				114E4A3B27AE80FC00F26274 /* Supporting Files */,
 				114E4A4127AE871D00F26274 /* Models */,
 				114E4A3C27AE810600F26274 /* Views */,
-				11DCCBCA27AF10B300AC0316 /* Sounds */,
+				11094F4D27AF239A007F0B65 /* SoundEffects */,
 				114E4A3127AE80C800F26274 /* Assets.xcassets */,
 				114E4A3327AE80C800F26274 /* Preview Content */,
 			);
@@ -121,15 +130,6 @@
 				114E4A4627AE878000F26274 /* GameManager.swift */,
 			);
 			path = Models;
-			sourceTree = "<group>";
-		};
-		11DCCBCA27AF10B300AC0316 /* Sounds */ = {
-			isa = PBXGroup;
-			children = (
-				11DCCBCB27AF10C000AC0316 /* win.wav */,
-				11DCCBCC27AF10C000AC0316 /* lose.wav */,
-			);
-			path = Sounds;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -190,10 +190,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				11DCCBCD27AF10C000AC0316 /* win.wav in Resources */,
+				11094F5027AF23A9007F0B65 /* win.wav in Resources */,
 				114E4A3527AE80C800F26274 /* Preview Assets.xcassets in Resources */,
 				114E4A3227AE80C800F26274 /* Assets.xcassets in Resources */,
-				11DCCBCE27AF10C000AC0316 /* lose.wav in Resources */,
+				11094F5127AF23A9007F0B65 /* lose.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
