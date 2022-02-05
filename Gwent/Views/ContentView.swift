@@ -12,7 +12,7 @@ struct ContentView: View {
   
   var body: some View {
     if gameManager.game.isGameFinished {
-      FinalView(message: gameManager.game.finalMessage, score: gameManager.game.score, restartGame: gameManager.restartGame)
+      FinalView(winner: gameManager.game.winner, score: gameManager.game.score, restartGame: gameManager.restartGame)
     } else {
       GameView(gameManager: .constant(gameManager))
     }

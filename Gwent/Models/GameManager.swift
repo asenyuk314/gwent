@@ -32,8 +32,8 @@ class GameManager: ObservableObject {
   
   private func finishTurn() {
     if game.userPower != game.computerPower {
-      let winner: K.playerNames = game.userPower > game.computerPower ? .user : .computer
-      game.players[winner]!.score += 1
+      let roundWinner: K.playerNames = game.userPower > game.computerPower ? .user : .computer
+      game.players[roundWinner]!.score += 1
     }
     game.turnIsFinished = true
   }

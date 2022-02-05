@@ -10,6 +10,7 @@ import Foundation
 struct K {
   static let roundsToWin = 2
   static let totalRounds = 3
+
   // [сила: количество]
   static let cardsCount = [
     6: 2,
@@ -23,18 +24,21 @@ struct K {
     static let roundStart = 3
   }
   
-  enum playerNames {
-    case user
-    case computer
-  }
-  
-  static let playerReadableNames: [playerNames: String] = [
-    .user: "Игрок",
-    .computer: "Компьютер"
-  ]
-  
   struct cardImage {
     static let back = "🐺"
     static let front = "⚔️"
   }
+  
+  enum playerNames {
+    case user
+    case computer
+  }
+  static let playerReadableNames: [playerNames: String] = [
+    .user: "Игрок",
+    .computer: "Компьютер"
+  ]
+  static let soundByPlayer: [playerNames: String] = [
+    .user: "win",
+    .computer: "lose"
+  ]
 }

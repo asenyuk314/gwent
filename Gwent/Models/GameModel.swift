@@ -53,8 +53,14 @@ struct GameModel {
       player.score == K.roundsToWin
     })
   }
-  var winner: K.playerNames {
-    players[.user]!.score > players[.computer]!.score ? .user : .computer
+  var winner: K.playerNames? {
+    let userScore = players[.user]!.score
+    let computerScore = players[.computer]!.score
+    return userScore == computerScore
+      ? nil
+      : userScore > computerScore
+        ? .user
+        : .computer
   }
   
   // MARK: - Messages
@@ -64,10 +70,5 @@ struct GameModel {
   }
   var power: String {
     "\(K.cardImage.front) \(userPower):\(computerPower)"
-  }
-  var finalMessage: String {
-    players[.user]!.score != players[.computer]!.score
-    ? "\(K.playerReadableNames[winner]!) победил"
-    : "Ничья ¯\\_(ツ)_/¯"
   }
 }

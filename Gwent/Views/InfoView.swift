@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct InfoView: View {
-  @Environment(\.dismiss) var dismiss
+  @Environment(\.dismiss) private var dismiss
   let score: String
   let power: String
 
