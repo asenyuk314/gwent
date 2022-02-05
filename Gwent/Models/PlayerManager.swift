@@ -20,7 +20,7 @@ struct PlayerManager {
   
 // MARK: - Cards Events
   
-  mutating func shuffleCards() {
+  private mutating func shuffleCards() {
     var newDeck: [Int] = []
     K.cardsCount.forEach { cardPower, cardCount in
       newDeck += Array(repeating: cardPower, count: cardCount)

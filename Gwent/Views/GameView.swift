@@ -16,13 +16,7 @@ struct GameView: View {
         ScrollView(.horizontal) {
           LazyHStack {
             ForEach(0..<gameManager.game.computerHand.count, id: \.self) { _ in
-              Text(K.emoji.wolf)
-                .font(.system(size: 30))
-                .frame(width: 50, height: 100)
-                .background(Color("darkBrown"))
-                .cornerRadius(5)
-                .opacity(gameManager.game.computerSkippedTurn ? 0.5 : 1)
-                .padding(.vertical)
+              CardView(isSmall: false)
             }
           }
         }
@@ -38,7 +32,7 @@ struct GameView: View {
       
       ZStack {
         VStack {
-          CardBackView(backImage: K.emoji.power, cardNumber: gameManager.game.computerPower)
+          CardView(cardNumber: gameManager.game.computerPower, isCardBack: false)
           Spacer()
           VStack {
             Text("Счёт \(gameManager.game.score)")
@@ -54,18 +48,18 @@ struct GameView: View {
           .cornerRadius(5)
           .padding()
           Spacer()
-          CardBackView(backImage: K.emoji.power, cardNumber: gameManager.game.userPower)
+          CardView(cardNumber: gameManager.game.userPower, isCardBack: false)
         }
         HStack {
           Spacer()
           VStack {
-            CardBackView(cardNumber: gameManager.game.computerDeckCount)
+            CardView(cardNumber: gameManager.game.computerDeckCount)
             Spacer()
             StyledButton(text: "Пас", action: {
               gameManager.skipTurn(for: .user)
             }, isDisabled: gameManager.game.isComputerRound)
             Spacer()
-            CardBackView(cardNumber: gameManager.game.userDeckCount)
+            CardView(cardNumber: gameManager.game.userDeckCount)
           }
         }
       }
@@ -76,22 +70,11 @@ struct GameView: View {
             Button {
               gameManager.playCard(for: .user, at: index)
             } label: {
-              ZStack {
-                RoundedRectangle(cornerRadius: 5)
-                  .fill(Color("lightGreen"))
-                  .frame(width: 50, height: 100)
-                VStack(spacing: 15) {
-                  Text(K.emoji.power)
-                    .font(.system(size: 12))
-                  Text(gameManager.getCardPower(for: .user, at: index))
-                    .foregroundColor(Color("darkBrown"))
-                }
-              }
+              CardView(cardNumber: gameManager.getCardPower(for: .user, at: index), isCardBack: false, isSmall: false)
             }
             .disabled(gameManager.game.isComputerRound)
             .cornerRadius(5)
             .shadow(radius: 3)
-            .padding(.vertical)
           }
         }
       }

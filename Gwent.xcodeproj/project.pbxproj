@@ -17,7 +17,7 @@
 		114E4A4527AE876600F26274 /* GameModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 114E4A4427AE876600F26274 /* GameModel.swift */; };
 		114E4A4727AE878000F26274 /* GameManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 114E4A4627AE878000F26274 /* GameManager.swift */; };
 		114E4A4B27AE8CE500F26274 /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 114E4A4A27AE8CE500F26274 /* GameView.swift */; };
-		114E4A4D27AEA40700F26274 /* CardBackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 114E4A4C27AEA40700F26274 /* CardBackView.swift */; };
+		114E4A4D27AEA40700F26274 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 114E4A4C27AEA40700F26274 /* CardView.swift */; };
 		114E4A4F27AECDA400F26274 /* StyledButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 114E4A4E27AECDA300F26274 /* StyledButton.swift */; };
 		114E4A5127AED13900F26274 /* FinalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 114E4A5027AED13900F26274 /* FinalView.swift */; };
 /* End PBXBuildFile section */
@@ -34,7 +34,7 @@
 		114E4A4427AE876600F26274 /* GameModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameModel.swift; sourceTree = "<group>"; };
 		114E4A4627AE878000F26274 /* GameManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameManager.swift; sourceTree = "<group>"; };
 		114E4A4A27AE8CE500F26274 /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
-		114E4A4C27AEA40700F26274 /* CardBackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardBackView.swift; sourceTree = "<group>"; };
+		114E4A4C27AEA40700F26274 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		114E4A4E27AECDA300F26274 /* StyledButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StyledButton.swift; sourceTree = "<group>"; };
 		114E4A5027AED13900F26274 /* FinalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinalView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -102,7 +102,7 @@
 				114E4A4A27AE8CE500F26274 /* GameView.swift */,
 				114E4A3F27AE86DD00F26274 /* InfoView.swift */,
 				114E4A5027AED13900F26274 /* FinalView.swift */,
-				114E4A4C27AEA40700F26274 /* CardBackView.swift */,
+				114E4A4C27AEA40700F26274 /* CardView.swift */,
 				114E4A4E27AECDA300F26274 /* StyledButton.swift */,
 			);
 			path = Views;
@@ -194,7 +194,7 @@
 				114E4A4F27AECDA400F26274 /* StyledButton.swift in Sources */,
 				114E4A4727AE878000F26274 /* GameManager.swift in Sources */,
 				114E4A4B27AE8CE500F26274 /* GameView.swift in Sources */,
-				114E4A4D27AEA40700F26274 /* CardBackView.swift in Sources */,
+				114E4A4D27AEA40700F26274 /* CardView.swift in Sources */,
 				114E4A2E27AE80C600F26274 /* GwentApp.swift in Sources */,
 				114E4A3E27AE86B600F26274 /* Constants.swift in Sources */,
 				114E4A4527AE876600F26274 /* GameModel.swift in Sources */,

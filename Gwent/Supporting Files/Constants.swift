@@ -33,8 +33,8 @@ struct K {
     .computer: "Компьютер"
   ]
   
-  struct emoji {
-    static let wolf = "🐺"
-    static let power = "⚔️"
+  struct cardImage {
+    static let back = "🐺"
+    static let front = "⚔️"
   }
 }

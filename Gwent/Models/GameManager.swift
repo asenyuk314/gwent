@@ -16,7 +16,7 @@ class GameManager: ObservableObject {
   
   // MARK: - Game Events
   
-  func startGame() {
+  private func startGame() {
     for (playerName, _) in game.players {
       game.players[playerName]?.takeCards(numberOfCards: K.numberOfCardsToTakeAt.gameStart)
     }
@@ -30,7 +30,7 @@ class GameManager: ObservableObject {
   
   // MARK: - Turn Events
   
-  func finishTurn() {
+  private func finishTurn() {
     if game.userPower != game.computerPower {
       let winner: K.playerNames = game.userPower > game.computerPower ? .user : .computer
       game.players[winner]!.score += 1
@@ -49,7 +49,7 @@ class GameManager: ObservableObject {
     game.currentPlayer = .user
   }
   
-  func togglePlayer() {
+  private func togglePlayer() {
     if !game.players[game.nextPlayer]!.skippedTurn {
       game.currentPlayer = game.nextPlayer
     } else if game.players[game.currentPlayer]!.skippedTurn {
@@ -72,13 +72,13 @@ class GameManager: ObservableObject {
     togglePlayer()
   }
   
-  func getCardPower(for playerName: K.playerNames, at index: Int) -> String {
-    return String(game.players[playerName]!.getCardPower(at: index))
+  func getCardPower(for playerName: K.playerNames, at index: Int) -> Int {
+    return game.players[playerName]!.getCardPower(at: index)
   }
   
 // MARK: - Computer Events
 
-  func computerTurn() {
+  private func computerTurn() {
     let willPlayCard = !game.computerHand.isEmpty && Bool.random()
     if willPlayCard {
       playCard(for: .computer, at: Int.random(in: 0..<game.computerHand.count))

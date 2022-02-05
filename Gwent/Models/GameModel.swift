@@ -63,7 +63,7 @@ struct GameModel {
     "\(players[.user]!.score):\(players[.computer]!.score)"
   }
   var power: String {
-    "\(K.emoji.power) \(userPower):\(computerPower)"
+    "\(K.cardImage.front) \(userPower):\(computerPower)"
   }
   var finalMessage: String {
     players[.user]!.score != players[.computer]!.score
