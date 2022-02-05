@@ -11,6 +11,15 @@
 		114E4A3027AE80C600F26274 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 114E4A2F27AE80C600F26274 /* ContentView.swift */; };
 		114E4A3227AE80C800F26274 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 114E4A3127AE80C800F26274 /* Assets.xcassets */; };
 		114E4A3527AE80C800F26274 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 114E4A3427AE80C800F26274 /* Preview Assets.xcassets */; };
+		114E4A3E27AE86B600F26274 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 114E4A3D27AE86B600F26274 /* Constants.swift */; };
+		114E4A4027AE86DD00F26274 /* InfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 114E4A3F27AE86DD00F26274 /* InfoView.swift */; };
+		114E4A4327AE873400F26274 /* PlayerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 114E4A4227AE873400F26274 /* PlayerManager.swift */; };
+		114E4A4527AE876600F26274 /* GameModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 114E4A4427AE876600F26274 /* GameModel.swift */; };
+		114E4A4727AE878000F26274 /* GameManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 114E4A4627AE878000F26274 /* GameManager.swift */; };
+		114E4A4B27AE8CE500F26274 /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 114E4A4A27AE8CE500F26274 /* GameView.swift */; };
+		114E4A4D27AEA40700F26274 /* CardBackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 114E4A4C27AEA40700F26274 /* CardBackView.swift */; };
+		114E4A4F27AECDA400F26274 /* StyledButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 114E4A4E27AECDA300F26274 /* StyledButton.swift */; };
+		114E4A5127AED13900F26274 /* FinalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 114E4A5027AED13900F26274 /* FinalView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +28,15 @@
 		114E4A2F27AE80C600F26274 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		114E4A3127AE80C800F26274 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		114E4A3427AE80C800F26274 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		114E4A3D27AE86B600F26274 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		114E4A3F27AE86DD00F26274 /* InfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoView.swift; sourceTree = "<group>"; };
+		114E4A4227AE873400F26274 /* PlayerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerManager.swift; sourceTree = "<group>"; };
+		114E4A4427AE876600F26274 /* GameModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameModel.swift; sourceTree = "<group>"; };
+		114E4A4627AE878000F26274 /* GameManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameManager.swift; sourceTree = "<group>"; };
+		114E4A4A27AE8CE500F26274 /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
+		114E4A4C27AEA40700F26274 /* CardBackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardBackView.swift; sourceTree = "<group>"; };
+		114E4A4E27AECDA300F26274 /* StyledButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StyledButton.swift; sourceTree = "<group>"; };
+		114E4A5027AED13900F26274 /* FinalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinalView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +69,9 @@
 		114E4A2C27AE80C600F26274 /* Gwent */ = {
 			isa = PBXGroup;
 			children = (
-				114E4A2D27AE80C600F26274 /* GwentApp.swift */,
-				114E4A2F27AE80C600F26274 /* ContentView.swift */,
+				114E4A3B27AE80FC00F26274 /* Supporting Files */,
+				114E4A4127AE871D00F26274 /* Models */,
+				114E4A3C27AE810600F26274 /* Views */,
 				114E4A3127AE80C800F26274 /* Assets.xcassets */,
 				114E4A3327AE80C800F26274 /* Preview Content */,
 			);
@@ -65,6 +84,38 @@
 				114E4A3427AE80C800F26274 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		114E4A3B27AE80FC00F26274 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				114E4A2D27AE80C600F26274 /* GwentApp.swift */,
+				114E4A3D27AE86B600F26274 /* Constants.swift */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		114E4A3C27AE810600F26274 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				114E4A2F27AE80C600F26274 /* ContentView.swift */,
+				114E4A4A27AE8CE500F26274 /* GameView.swift */,
+				114E4A3F27AE86DD00F26274 /* InfoView.swift */,
+				114E4A5027AED13900F26274 /* FinalView.swift */,
+				114E4A4C27AEA40700F26274 /* CardBackView.swift */,
+				114E4A4E27AECDA300F26274 /* StyledButton.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		114E4A4127AE871D00F26274 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				114E4A4227AE873400F26274 /* PlayerManager.swift */,
+				114E4A4427AE876600F26274 /* GameModel.swift */,
+				114E4A4627AE878000F26274 /* GameManager.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +188,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				114E4A4327AE873400F26274 /* PlayerManager.swift in Sources */,
+				114E4A4027AE86DD00F26274 /* InfoView.swift in Sources */,
 				114E4A3027AE80C600F26274 /* ContentView.swift in Sources */,
+				114E4A4F27AECDA400F26274 /* StyledButton.swift in Sources */,
+				114E4A4727AE878000F26274 /* GameManager.swift in Sources */,
+				114E4A4B27AE8CE500F26274 /* GameView.swift in Sources */,
+				114E4A4D27AEA40700F26274 /* CardBackView.swift in Sources */,
 				114E4A2E27AE80C600F26274 /* GwentApp.swift in Sources */,
+				114E4A3E27AE86B600F26274 /* Constants.swift in Sources */,
+				114E4A4527AE876600F26274 /* GameModel.swift in Sources */,
+				114E4A5127AED13900F26274 /* FinalView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,8 +335,9 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -304,8 +365,9 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
